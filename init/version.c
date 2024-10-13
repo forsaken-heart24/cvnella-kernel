@@ -22,6 +22,9 @@ extern int version_string(LINUX_VERSION_CODE);
 int version_string(LINUX_VERSION_CODE);
 #endif
 
+// Define UTS_RELEASE here
+#define UTS_RELEASE "cvnella-kernel"
+
 struct uts_namespace init_uts_ns = {
 	.kref = {
 		.refcount	= ATOMIC_INIT(2),
